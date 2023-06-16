@@ -6,3 +6,7 @@ variable "cloudflare_token" {
 variable "cloudflare_domain" {
   default = null
 }
+
+variable "cname_value" {
+  default = "localhost"
+}
