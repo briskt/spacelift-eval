@@ -3,7 +3,7 @@ resource "cloudflare_record" "spacelift" {
   name    = "spacelift"
   value   = var.cname_value
   type    = "CNAME"
-  ttl     = 3600
+  proxied = true
 }
 
 data "cloudflare_zone" "this" {
